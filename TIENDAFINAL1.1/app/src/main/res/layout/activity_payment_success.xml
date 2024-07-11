@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_checkmark"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/comprobar"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_thank_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡¡Gracias!!!"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="24sp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_payment_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pago Exitoso"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginBottom="32dp"/>
+
+       <TextView
+        android:id="@+id/tv_payment_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/roboto"/>
+
+    <Button
+        android:id="@+id/btn_continue_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accentColor"
+        android:textColor="@android:color/white"
+        android:text="Continuar Comprando"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"/>
+</LinearLayout>

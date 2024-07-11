@@ -1,0 +1,71 @@
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvOrderSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumen del pedido"
+            android:textSize="18sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSummeryItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTotalSummeryPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total del pedido"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvTotalPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgDeliveryOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbStorePickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recojo en tienda" />
+
+            <RadioButton
+                android:id="@+id/rbDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout" />
+
+    </LinearLayout>
+
+</ScrollView>

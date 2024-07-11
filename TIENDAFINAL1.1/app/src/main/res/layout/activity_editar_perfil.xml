@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editar_perfil">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvMisCompras"
+        android:layout_width="406dp"
+        android:layout_height="818dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#E2E4E6"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/Userper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ly1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="70dp">
+
+                        <ImageView
+                            android:id="@+id/photouser"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@android:drawable/sym_def_app_icon"
+                            tools:layout_editor_absoluteX="29dp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ly1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nameUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/san_francisco"
+                            android:textColor="#302E2E"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:id="@+id/correoUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/san_francisco"
+                            android:text="TextView"
+                            android:textColor="#302E2E"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="379dp"
+                android:layout_height="97dp"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/Userper">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/teal_700"
+                        android:drawableLeft="@drawable/ic_login"
+                        android:text="Información personal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="379dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/Userper">
+
+                <TextView
+                    android:id="@+id/texPerfil"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Perfil"
+                    android:textColor="#302E2E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="379dp"
+                android:layout_height="97dp"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/Userper">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_direcciones"
+                        android:layout_width="302dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorBackground"
+                        android:drawableLeft="@drawable/ic_ubicacion"
+                        android:text="Direcciones"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn_historial"
+                        android:layout_width="302dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorBackground"
+                        android:drawableLeft="@drawable/ic_historial"
+                        android:text="Historial pedidos"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="381dp"
+                android:layout_height="59dp"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/Userper">
+
+                <TextView
+                    android:layout_width="154dp"
+                    android:layout_height="47dp"
+                    android:layout_weight="1"
+                    android:text="Soporte"
+                    android:textColor="#302E2E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="379dp"
+                android:layout_height="97dp"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/Userper">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_terminos"
+                        android:layout_width="302dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorBackground"
+                        android:drawableLeft="@drawable/ic_terminos"
+                        android:text="Terminos y condiciones"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn_privacidad"
+                        android:layout_width="302dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorBackground"
+                        android:drawableLeft="@drawable/ic_politicas"
+                        android:text="Politicas de privacidad"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_cerrarsesion"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorBackground"
+                    android:drawableLeft="@drawable/ic_registromenu"
+                    android:text="Cerrar sesión"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
